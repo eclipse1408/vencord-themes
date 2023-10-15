@@ -1,6 +1,7 @@
-# vencord themes.
-vencord themes. but now you can use it for Vencord. 
-there are the ones which no css is there
-so i can do this now
-just go to one of the css files, and press raw and copy the link and ur done
-np
+# Vencord Temes
+
+This is a collection of my favorite themes form BetterDiscord themes, but packed all into a small bundle! Since sometimes dumb people don't know how to get the css when there are multiple, I have made it easy for them.
+
+# Owners
+
+All data belongs to respective repo owners. Their names can be found after the '_' in the files nams. For exanple, ```fluent_TakosThings.css``` has its repo owner as TakosThings.
