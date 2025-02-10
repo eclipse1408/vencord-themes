@@ -1,24 +1,13 @@
-
- * @name ClearVision Edited
- * @author ClearVision Team and eclipse1408
- * @version 6.3.0
- * @description Clearvision theme edited
- * @source https://github.com/eclipse1408/vencord-themes/edit/main/clearvision_Clearvision.theme.css
- * @website https://clearvision.github.io
-
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@100;300;400;500;700&display=swap');
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
-@import url('https://nyri4.github.io/Discolored/main.css');
-@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
 :root {
   --main-color: #90BC44;
   --hover-color: #9AC551;
   --success-color: #C0EC7C;
-  --danger-color: #E0443C;
-  --url-color: #58CCFC;
+  --danger-color: #E4896C;
+  --url-color: #C1CAFF;
   --background-image: url('https://i.imgur.com/yWm4EV2.png');
   --background-shading: 100%;
   --background-position: center;
@@ -33,7 +22,7 @@
   --background-blur: 0px;
   --background-overlay: rgba(0,0,0,0.6);
   --user-popout-image: url('https://i.imgur.com/G7DdAMp.png');
-  --user-popout-position: center left;
+  --user-popout-position: center;
   --user-popout-size: cover;
   --user-popout-repeat: no-repeat;
   --user-popout-attachment: fixed;
@@ -53,18 +42,18 @@
   --user-modal-saturation: 100%;
   --user-modal-grayscale: 0%;
   --user-modal-invert: 0%;
-  --user-modal-blur: 2px;
+  --user-modal-blur: 3px;
   --home-icon: url('https://cdn.glitch.com/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png?1540948766417');
   --home-position: center;
-  --home-size: 45px;
-  --channel-unread: var(--main-color);
+  --home-size: 50px;
+  --channel-unread: #90BC44;
   --channel-color: rgba(255,255,255,0.3);
   --muted-color: rgba(255,255,255,0.1);
-  --online-color: #43b581;
-  --idle-color: #DAA346;
-  --dnd-color: #D46666;
-  --streaming-color: #593695;
-  --offline-color: #808080;
+  --online-color: #43B581;
+  --idle-color: #FCA94D;
+  --dnd-color: #E4896C;
+  --streaming-color: #8D6AE0;
+  --offline-color: #E9EBF7;
   --main-font: Ubuntu;
   --code-font: Ubuntu Mono;
   --channels-width: 220px;
@@ -85,21 +74,6 @@
   --bd-blue: var(--main-color);
   --bd-blue-hover: var(--hover-color);
   --bd-blue-active: var(--hover-color);
-  --rs-small-spacing: 2px;
-  --rs-medium-spacing: 2px;
-  --rs-large-spacing: 2px;
-  --rs-small-width: 2px;
-  --rs-medium-width: 2px;
-  --rs-large-width: 2px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-phone-visible: block;
 }
 
 /* Any custom CSS below here */
-
-
