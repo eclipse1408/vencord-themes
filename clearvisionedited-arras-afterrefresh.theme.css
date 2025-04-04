@@ -1,6 +1,6 @@
 /**
- * @name ClearVision V7 for Vencord
- * @author ClearVision Team
+ * @name Clearvision: arras.io edition for Vencord
+ * @author ClearVision Team, Edited by eclipse1408
  * @version 7.0.0
  * @description Highly customizable theme for Vencord.
  * @source https://github.com/ClearVision/ClearVision-v7
@@ -10,6 +10,8 @@
 /* IMPORT CSS */
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
