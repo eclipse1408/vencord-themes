@@ -1,17 +1,17 @@
 /**
- * @name ClearVision V7 for Vencord
- * @author ClearVision Team
- * @version 7.0.0 pre
- * @description Highly customizable theme for BetterDiscord.
+ * @name Clearvision: arras.io edition for Vencord
+ * @author ClearVision Team, Edited by eclipse1408
+ * @version 7.0.0
+ * @description Highly customizable theme for Vencord.
  * @source https://github.com/ClearVision/ClearVision-v7
  * @website https://clearvision.github.io
  * @invite dHaSxn3
  */
-/* IMPORT CSS, BOTTOM TWO IS TO IMPORT FONTS*/
+/* IMPORT CSS */
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
-@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@100;300;400;500;700&display=swap');
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
@@ -20,34 +20,35 @@
   --success-color: #C0EC7C;
   --danger-color: #E4896C;
   /* STATUS COLORS */
-  --online-color: #43B581;
+  --online-color: #43b581;
   --idle-color: #FCA94D;
   --dnd-color: #E4896C;
   --streaming-color: #8D6AE0;
   --offline-color: #E9EBF7;
-  /* BACKGROUND IMAGES */
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%;
   --background-image: url(https://i.imgur.com/yWm4EV2.png);
   --background-attachment: fixed;
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  /* USER POPOUT BACKGROUND */
   --user-popout-image: var(--background-image);
   --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+  /* USER MODAL BACKGROUND */
   --user-modal-image: var(--background-image);
   --user-modal-attachment: var(--background-attachment);
-  /* HOME ICON */
-  --home-icon: url(https://cdn.glitch.me/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png);
-  /* FONTS */
-  --main-font: "Ubuntu";
-  --code-font: "Ubuntu Mono", "Liberation Mono", Menlo, Courier, monospace;
-  /* BACKGROUND IMAGE FILTERS */
-  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
-  --user-popout-filter: var(--background-filter);
   --user-modal-filter: var(--background-filter);
+  /* HOME ICON */
+  --home-icon: url(https://cdn.glitch.com/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png?1540948766417);
+  /* FONTS */
+  --main-font: "Ubuntu", Ubuntu, "Ubuntu", Ubuntu, sans-serif;
+  --code-font: Ubuntu Mono, "Ubuntu Mono", "Ubuntu Mono", Ubuntu Mono, Ubuntu Mono, monospace;
 }
 
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
   --background-shading: rgba(252, 252, 252, 0.3);
-  --background-shading-percent: 100%;
   --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(252, 252, 252, 0.7);
   --modal-shading: rgba(252, 252, 252, 0.5);
@@ -56,11 +57,10 @@
   --muted-text: #75757e;
 }
 
-/* GREY THEME / DARK THEME IN OLD UI */
+/* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
   --background-shading: rgba(0, 0, 0, 0.4);
-  --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.3);
+  --card-shading: rgba(0, 0, 0, 0.2);
   --popout-shading: rgba(0, 0, 0, 0.6);
   --modal-shading: rgba(0, 0, 0, 0.4);
   --input-shading: rgba(255, 255, 255, 0.05);
@@ -68,11 +68,10 @@
   --muted-text: #aeaeb4;
 }
 
-/* DARK THEME - NEW UI EXCLUSIVE */
+/* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
   --background-shading: rgba(0, 0, 0, 0.6);
-  --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.3);
   --popout-shading: rgba(0, 0, 0, 0.7);
   --modal-shading: rgba(0, 0, 0, 0.5);
   --input-shading: rgba(255, 255, 255, 0.05);
@@ -80,11 +79,10 @@
   --muted-text: #94949c;
 }
 
-/* MIDNIGHT THEME - NEW UI EXCLUSIVE */
+/* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
   --background-shading: rgba(0, 0, 0, 0.8);
-  --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.5);
+  --card-shading: rgba(0, 0, 0, 0.4);
   --popout-shading: rgba(0, 0, 0, 0.8);
   --modal-shading: rgba(0, 0, 0, 0.6);
   --input-shading: rgba(255, 255, 255, 0.05);
